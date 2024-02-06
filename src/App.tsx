@@ -4,8 +4,10 @@ import IconPlus from "./components/icons/IconPlus";
 import IconStar from "./components/icons/IconStar";
 import IconMinus from "./components/icons/IconMinus";
 import { data } from "./constant";
-// import mobile from "../public/assets/images/background-pattern-mobile.svg";
-// import desktop from "../public/assets/images/background-pattern-desktop.svg";
+// import BackgroundDesktop from "./components/background/BackgroundDesktop";
+// import BackgroundMobile from "./components/background/BackgroundMobile";
+import mobile from "../src/images/background-pattern-mobile.svg";
+import desktop from "../src/images/background-pattern-desktop.svg";
 
 interface ClickState {
   button1: boolean;
@@ -53,9 +55,7 @@ const App = () => {
         <section
           style={{
             background: `url(${
-              widthScreen > 600
-                ? "../images/background-pattern-desktop.svg"
-                : "../images/background-pattern-mobile.svg"
+              widthScreen > 600 ? desktop : mobile
             }) center/cover no-repeat`,
             height: "232px",
             width: "100%",

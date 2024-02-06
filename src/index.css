@@ -13,9 +13,9 @@
 .hidden-container {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 1s ease-out;
+  transition: max-height 0.5s ease-out;
 }
 .showed-container {
   max-height: 200px;
-  transition: max-height 1s ease-out;
+  transition: max-height 0.5s ease-out;
 }
