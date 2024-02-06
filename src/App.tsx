@@ -64,7 +64,7 @@ const App = () => {
           }}
         ></section>
         <section className="relative w-screen h-[150vh] md:h-[100vh] flex justify-center">
-          <article className="text-DarkPurple w-[330px] p-6 absolute top-[-20%] bg-White rounded-lg flex flex-col gap-5 sm:w-[600px]">
+          <article className="text-DarkPurple w-[330px] p-6 absolute top-[-20%] sm:top-[-25%] bg-White rounded-lg flex flex-col gap-5 sm:w-[600px]">
             <div className="flex justify-start mt-4">
               <span className="mr-5">
                 <IconStar />
@@ -94,9 +94,9 @@ const App = () => {
                   <p
                     className={`text-GrayishPurple ${
                       !click[`button${item.id}` as keyof ClickState]
-                        ? "hidden opacity-0 translate-y-[-2px]"
-                        : "opacity-100 translate-y-0"
-                    } transition-all duration-300 ease-in-out`}
+                        ? "hidden-container"
+                        : "showed-container"
+                    } `}
                   >
                     {item.paragraph}
                   </p>
