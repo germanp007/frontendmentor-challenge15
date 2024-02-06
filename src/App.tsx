@@ -54,8 +54,8 @@ const App = () => {
           style={{
             background: `url(${
               widthScreen > 600
-                ? "../public/assets/images/background-pattern-desktop.svg"
-                : "../public/assets/images/background-pattern-mobile.svg"
+                ? "../images/background-pattern-desktop.svg"
+                : "../images/background-pattern-mobile.svg"
             }) center/cover no-repeat`,
             height: "232px",
             width: "100%",
