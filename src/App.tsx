@@ -4,8 +4,6 @@ import IconPlus from "./components/icons/IconPlus";
 import IconStar from "./components/icons/IconStar";
 import IconMinus from "./components/icons/IconMinus";
 import { data } from "./constant";
-// import BackgroundDesktop from "./components/background/BackgroundDesktop";
-// import BackgroundMobile from "./components/background/BackgroundMobile";
 //import mobile from "../public/images/background-pattern-mobile.svg";
 
 interface ClickState {
@@ -53,7 +51,11 @@ const App = () => {
       <main className="bg-LightPink flex flex-col justify-center w-screen">
         <section
           style={{
-            background: `url('../images/background-pattern-mobile.svg') center/cover no-repeat`,
+            background: `url(${
+              widthScreen < 600
+                ? "../images/background-pattern-mobile.svg"
+                : "../images/background-pattern-desktop.svg"
+            }) center/cover no-repeat`,
             height: "232px",
             width: "100%",
             display: "flex",
@@ -119,7 +121,6 @@ const App = () => {
             <strong>German Pinto.</strong>
           </a>
         </h6>
-        <img src="../images/background-pattern-mobile.svg" alt="mobile" />
       </footer>
     </>
   );
