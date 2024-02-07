@@ -6,7 +6,7 @@ import IconMinus from "./components/icons/IconMinus";
 import { data } from "./constant";
 // import BackgroundDesktop from "./components/background/BackgroundDesktop";
 // import BackgroundMobile from "./components/background/BackgroundMobile";
-import mobile from "../public/images/background-pattern-mobile.svg";
+//import mobile from "../public/images/background-pattern-mobile.svg";
 
 interface ClickState {
   button1: boolean;
@@ -53,9 +53,7 @@ const App = () => {
       <main className="bg-LightPink flex flex-col justify-center w-screen">
         <section
           style={{
-            // background: `url(${
-            //   widthScreen > 600 ? desktop : mobile
-            // }) center/cover no-repeat`,
+            background: `url('../images/background-pattern-mobile.svg') center/cover no-repeat`,
             height: "232px",
             width: "100%",
             display: "flex",
@@ -63,9 +61,7 @@ const App = () => {
             justifyContent: "center",
             flexDirection: "column",
           }}
-        >
-          {mobile}
-        </section>
+        ></section>
         <section className="relative w-screen h-[150vh] md:h-[100vh] flex justify-center">
           <article className="text-DarkPurple w-[330px] p-6 absolute top-[-20%] sm:top-[-25%] bg-White rounded-lg flex flex-col gap-5 sm:w-[600px]">
             <div className="flex justify-start mt-4">
