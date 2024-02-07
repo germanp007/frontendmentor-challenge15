@@ -6,8 +6,8 @@ import IconMinus from "./components/icons/IconMinus";
 import { data } from "./constant";
 // import BackgroundDesktop from "./components/background/BackgroundDesktop";
 // import BackgroundMobile from "./components/background/BackgroundMobile";
-import mobile from "/src/images/background-pattern-mobile.svg";
-import desktop from "/src/images/background-pattern-desktop.svg";
+// import mobile from "/src/images/background-pattern-mobile.svg";
+// import desktop from "/src/images/background-pattern-desktop.svg";
 
 interface ClickState {
   button1: boolean;
@@ -54,9 +54,7 @@ const App = () => {
       <main className="bg-LightPink flex flex-col justify-center w-screen">
         <section
           style={{
-            background: `url(${
-              widthScreen > 600 ? desktop : mobile
-            }) center/cover no-repeat`,
+            background: `url(../src/images/background-pattern-mobile.svg) center/cover no-repeat`,
             height: "232px",
             width: "100%",
 
