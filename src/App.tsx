@@ -6,8 +6,8 @@ import IconMinus from "./components/icons/IconMinus";
 import { data } from "./constant";
 // import BackgroundDesktop from "./components/background/BackgroundDesktop";
 // import BackgroundMobile from "./components/background/BackgroundMobile";
-import mobile from "../src/images/background-pattern-mobile.svg";
-import desktop from "../src/images/background-pattern-desktop.svg";
+import mobile from "/src/images/background-pattern-mobile.svg";
+import desktop from "/src/images/background-pattern-desktop.svg";
 
 interface ClickState {
   button1: boolean;
