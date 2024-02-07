@@ -123,7 +123,7 @@ const App = () => {
             <strong>German Pinto.</strong>
           </a>
         </h6>
-        <img src={mobile} alt="mobile" />
+        <img src="../images/background-pattern-mobile.svg" alt="mobile" />
       </footer>
     </>
   );
