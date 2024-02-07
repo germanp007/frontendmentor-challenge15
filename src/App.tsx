@@ -59,14 +59,13 @@ const App = () => {
             }) center/cover no-repeat`,
             height: "232px",
             width: "100%",
+
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
             flexDirection: "column",
           }}
-        >
-          dasd
-        </section>
+        ></section>
         <section className="relative w-screen h-[150vh] md:h-[100vh] flex justify-center">
           <article className="text-DarkPurple w-[330px] p-6 absolute top-[-20%] sm:top-[-25%] bg-White rounded-lg flex flex-col gap-5 sm:w-[600px]">
             <div className="flex justify-start mt-4">
